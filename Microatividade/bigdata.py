@@ -11,10 +11,10 @@ Original file is located at
 import pandas as pd
 
 dados = pd.read_csv(
-    '/content/dados.csv',
+    '../dados.csv',
     sep=';',
     engine='python',
-    encoding='utf=8'
+    encoding='utf-8'
 )
 
 print('Dados Originais')
