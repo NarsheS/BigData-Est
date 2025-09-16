@@ -11,7 +11,7 @@ Original file is located at
 import pandas as pd
 
 dados = pd.read_csv(
-    '../dados.csv',
+    './dados.csv',
     sep=';',
     engine='python',
     encoding='utf-8'
