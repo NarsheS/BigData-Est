@@ -38,10 +38,12 @@ dfCopia = df
 
 # Trocando valores nulos por 0 na coluna 'Calories'
 dfCopia['Calories'] = dfCopia['Calories'].fillna(0)
+print("Dados com a coluna Calories corrigida")
 print(dfCopia)
 
 # Trocando valores nulos por 1900/01/01 na coluna 'Date'
 dfCopia['Date'] = dfCopia['Date'].fillna('1900/01/01')
+print("Correção de datas nulas")
 print(dfCopia)
 
 # Tratando 2 erros
@@ -54,8 +56,10 @@ dfCopia['Date'] = dfCopia['Date'].replace('20201226', pd.to_datetime('2020/12/26
 # Formatando toda a coluna Date para formato em data
 dfCopia['Date'] = pd.to_datetime(dfCopia['Date'])
 
+print("Tabela corrigida:")
 print(dfCopia)
 
 # Removendo do dataframe qualquer data que tenha valor nulo.
 dfCopia = dfCopia.dropna(subset=['Date'])
+print("Tabela final:")
 print(dfCopia)
