@@ -56,10 +56,10 @@ dfCopia['Date'] = dfCopia['Date'].replace('20201226', pd.to_datetime('2020/12/26
 # Formatando toda a coluna Date para formato em data
 dfCopia['Date'] = pd.to_datetime(dfCopia['Date'])
 
-print("Tabela corrigida:")
+print("Dataframe corrigido:")
 print(dfCopia)
 
 # Removendo do dataframe qualquer data que tenha valor nulo.
 dfCopia = dfCopia.dropna(subset=['Date'])
-print("Tabela final:")
+print("Dataframe final:")
 print(dfCopia)
